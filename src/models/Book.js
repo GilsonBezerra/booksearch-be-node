@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const bookController = require('../controllers/bookController');
+
 const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
@@ -14,4 +16,3 @@ const bookSchema = new Schema({
 }, { versionKey: false });
 
 module.exports = mongoose.model('Book', bookSchema);
-
